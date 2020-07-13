@@ -53,10 +53,10 @@ body {
     width: 100%;
 }
 .some-text {
-    top: 50%;
+    top: 30%;
     position: absolute;
-    color:grey;
+    color:black;
     width: 40%;
     background-color: rgba(199, 199, 199, 0.651);
-    justify-content: center;
+    margin: 10%;
 }
