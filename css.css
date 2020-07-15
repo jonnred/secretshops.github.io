@@ -4,7 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
+    position: relative;
     background-color: rgb(248, 240, 240);
+    overflow: hidden;
+
+
 }
 .nav-container {
     display: flex;
@@ -21,7 +25,6 @@ body {
     margin-top: 0px;
     justify-content: center;
     opacity: 0;
-    overflow: hidden;
 }
 .nav-container a {
     text-decoration: none;
@@ -29,15 +32,17 @@ body {
 }
 .V:hover {
     background-color: rgb(189, 187, 184);
-    width: 12%;
+    width: 200px;
     height: 100vh;
-    transition: 1s;
+    transition: 1.5s;
     opacity: .7;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-
+    align-items: flex-start;
+    z-index:1;
+    box-shadow: 5px 10px rgb(0, 0, 0 , 0.8 );
+    font-weight: bolder;
 }
 .categories {
 
@@ -45,18 +50,48 @@ body {
 .categories-items {
 }
 .design {
-    position: absolute;
     z-index: -1;
 }
 .front-img {
-    height: 100vh;
-    width: 100%;
+    position: relative;
+    width: auto;
+    height: 92vh;
+}
+.logo {
+    font-size: 20px;
+    font-weight: lighter;
 }
 .some-text {
     top: 30%;
     position: absolute;
     color:black;
-    width: 40%;
-    background-color: rgba(199, 199, 199, 0.651);
+    width: auto;
+    padding:8px;
+    background-color: rgba(199, 199, 199, 0.185);
     margin: 10%;
+}
+.footer-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.24);
+    height: 100px;
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: auto;
+}
+.footer-container i {
+    width: 10%;
+    height: auto;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    color: white;
+  }
 }
