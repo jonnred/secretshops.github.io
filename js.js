@@ -1,3 +1,4 @@
-document.querySelector("#product-shirt-1")
-.addEventListener
-("click", alert("heyy"));
+window.onload= function(){
+    const a = document.getElementById("product-tsirt");
+    a.addEventListener("click", alert(123123123));
+}
